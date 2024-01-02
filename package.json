@@ -1,6 +1,5 @@
 {
   "name": "@clabnet/configs",
-  "description": "Eslint, Prettier, Syncpack shared configurations",
   "version": "0.0.2",
   "keywords": [
     "configs",
@@ -9,6 +8,7 @@
     "prettier",
     "syncpack"
   ],
+  "description": "Eslint, Prettier, Syncpack shared configurations",
   "author": "Claudio Barca <c.barca@libero.it> (http://github.com/clabnet)",
   "license": "MIT",
   "repository": "clabnet/configs",
