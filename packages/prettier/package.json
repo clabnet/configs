@@ -6,11 +6,10 @@
   },
   "keywords": [
     "configs",
-    "clabnet",
     "pnpm",
     "prettier"
   ],
-  "description": "Shared prettier config",
+  "description": "Shared prettier config for monorepo and lib packages",
   "author": "Claudio Barca <c.barca@libero.it> (http://github.com/clabnet)",
   "license": "MIT",
   "repository": {
@@ -20,6 +19,9 @@
   },
   "homepage": "https://github.com/clabnet/configs#readme",
   "bugs": "https://github.com/clabnet/configs/issues",
+  "scripts": {
+    "syncpack:fix": "syncpack format && syncpack fix-mismatches"
+  },
   "main": "index.js",
   "devDependencies": {
     "@types/prettier": "3.0.0"
