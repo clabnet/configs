@@ -1,0 +1,30 @@
+{
+  "name": "@clabnet/configs-prettier",
+  "version": "0.1.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "configs",
+    "clabnet",
+    "pnpm",
+    "prettier"
+  ],
+  "description": "Shared prettier config",
+  "author": "Claudio Barca <c.barca@libero.it> (http://github.com/clabnet)",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/clabnet/configs",
+    "type": "git",
+    "directory": "packages/prettier"
+  },
+  "homepage": "https://github.com/clabnet/configs#readme",
+  "bugs": "https://github.com/clabnet/configs/issues",
+  "main": "index.js",
+  "devDependencies": {
+    "@types/prettier": "3.0.0"
+  },
+  "peerDependencies": {
+    "prettier": "^2.7.1"
+  }
+}

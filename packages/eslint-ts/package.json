@@ -1,0 +1,36 @@
+{
+  "name": "@clabnet/configs-eslint-ts",
+  "version": "0.1.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "configs",
+    "eslint",
+    "pnpm"
+  ],
+  "description": "Shared eslint config for monorepo (ts) and lib (ts) packages",
+  "author": "Claudio Barca <c.barca@libero.it> (http://github.com/clabnet)",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/clabnet/configs",
+    "type": "git",
+    "directory": "packages/eslint-ts"
+  },
+  "homepage": "https://github.com/clabnet/configs#readme",
+  "bugs": "https://github.com/clabnet/configs/issues",
+  "main": "index.js",
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "6.17.0",
+    "@typescript-eslint/parser": "6.17.0",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-plugin-log-filenames": "^1.0.6",
+    "eslint-plugin-prettier": "5.1.2"
+  },
+  "devDependencies": {
+    "@types/eslint": "^8.56.0"
+  },
+  "peerDependencies": {
+    "eslint": "^8.26.0"
+  }
+}
