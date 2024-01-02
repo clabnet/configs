@@ -1,6 +1,6 @@
 {
   "name": "@clabnet/configs-prettier",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publishConfig": {
     "access": "public"
   },
@@ -24,9 +24,9 @@
   },
   "main": "index.js",
   "devDependencies": {
-    "@types/prettier": "3.0.0"
+    "@types/prettier": "^3.0.0"
   },
   "peerDependencies": {
-    "prettier": "^2.7.1"
+    "prettier": "^3.1.1"
   }
 }
