@@ -1,5 +1,6 @@
 {
   "name": "@clabnet/configs-eslint-ts",
+  "description": "Shared eslint config for monorepo and lib packages",
   "version": "0.1.0",
   "publishConfig": {
     "access": "public"
@@ -9,7 +10,6 @@
     "eslint",
     "pnpm"
   ],
-  "description": "Shared eslint config for monorepo (ts) and lib (ts) packages",
   "author": "Claudio Barca <c.barca@libero.it> (http://github.com/clabnet)",
   "license": "MIT",
   "repository": {
@@ -19,6 +19,9 @@
   },
   "homepage": "https://github.com/clabnet/configs#readme",
   "bugs": "https://github.com/clabnet/configs/issues",
+  "scripts": {
+    "syncpack:fix": "syncpack format && syncpack fix-mismatches"
+  },
   "main": "index.js",
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "6.17.0",

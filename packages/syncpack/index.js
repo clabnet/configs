@@ -5,11 +5,11 @@ module.exports = {
       ],
       sortFirst: [
         'name',
+        'description',
         'version',
         'publishConfig',
         'private',
         'keywords',
-        'description',
         'author',
         'license',
         'repository',
