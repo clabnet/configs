@@ -1,18 +1,30 @@
 {
   "compilerOptions": {
-    "module": "esnext", //< the output module resolution system
-    "moduleResolution": "node", //< how the compiler tries to resolve modules
-    "target": "es6", //< target language
-    "lib": ["esnext"], //< which language features are available
-    "esModuleInterop": true,
+    "outDir": "./dist",
+    "noImplicitAny": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitOverride": true,
+    "strictNullChecks": false,
+    "strictFunctionTypes": false,
+    "target": "ESNext",
+    "module": "ESNext",
     "isolatedModules": true,
-    "forceConsistentCasingInFileNames": true,
+    "importHelpers": true,
+    "moduleResolution": "node",
     "resolveJsonModule": true,
-    "jsx": "react-jsx",
-    "allowJs": false,
     "strict": true,
+    "esModuleInterop": true,
     "skipLibCheck": true,
-    "noEmit": true,
-    "incremental": true
-  }
+    "forceConsistentCasingInFileNames": true,
+    "useDefineForClassFields": true,
+    "jsx": "preserve",
+    "lib": ["esnext", "dom", "dom.iterable"],
+    "allowSyntheticDefaultImports": true,
+    "allowJs": true
+  },
+  "typeRoots": ["**/node_modules/@types", "**/types"],
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "include": ["src/**/*", "__test__/**/*"],
+  "exclude": ["**/node_modules", "./dist/**/*", "coverage", "e2e", "benchmark", "mock", "docs"]
 }

@@ -1,6 +1,6 @@
 {
   "name": "@clabnet/configs-ts",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Shared typescript config for monorepo and lib packages",
   "main": "tsconfig.json",
   "keywords": [
