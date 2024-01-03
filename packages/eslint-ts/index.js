@@ -5,6 +5,8 @@ module.exports = {
     plugins: ['@typescript-eslint', 'log-filenames', 'prettier'],
     extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'prettier'],
     rules: {
+        '@typescript-eslint/no-unused-vars': 'off',
+        '@typescript-eslint/ban-ts-comment': 'off',
         '@typescript-eslint/no-empty-interface': 'off',
         '@typescript-eslint/no-explicit-any': 'off',
         '@typescript-eslint/no-namespace': 'off',
