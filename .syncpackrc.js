@@ -1,1 +1,1 @@
-module.exports = require('@clabnet/configs-syncpack');
+module.exports = require('./packages/syncpack');

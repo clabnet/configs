@@ -1,25 +1,27 @@
 module.exports = {
-    dependencyTypes: [
-        "dev",
-        "prod"
-      ],
-      sortFirst: [
-        'name',
-        'description',
-        'version',
-        'publishConfig',
-        'private',
-        'keywords',
-        'author',
-        'license',
-        'repository',
-        'homepage',
-        'bugs',
-        'scripts',
-        'type',
-        'main',
-        'dependencies',
-        'devDependencies',
-        'peerDependencies'
+    sortAz: [
+        "contributors",
+        "dependencies",
+        "devDependencies",
+        "keywords",
+        "peerDependencies",
+        "resolutions",
+        "scripts"
     ],
+    sortFirst: [
+        "name",
+        "displayName",
+        "version",
+        "type",
+        "private",
+        "description",
+        "main",
+        "keywords",
+        "homepage",
+        "bugs",
+        "repository",
+        "author",
+        "license",
+        "scripts"
+    ]
 };

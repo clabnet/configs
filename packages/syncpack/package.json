@@ -1,32 +1,32 @@
 {
   "name": "@clabnet/configs-syncpack",
-  "version": "0.1.1",
-  "publishConfig": {
-    "access": "public"
-  },
+  "version": "0.1.2",
+  "description": "Shared syncpack config for monorepo and lib packages",
+  "main": "index.js",
   "keywords": [
     "configs",
     "pnpm",
     "syncpack"
   ],
-  "description": "Shared syncpack config for monorepo and lib packages",
-  "author": "Claudio Barca <c.barca@libero.it> (http://github.com/clabnet)",
-  "license": "MIT",
+  "homepage": "https://github.com/clabnet/configs#readme",
+  "bugs": "https://github.com/clabnet/configs/issues",
   "repository": {
     "url": "https://github.com/clabnet/configs",
     "type": "git",
     "directory": "packages/syncpack"
   },
-  "homepage": "https://github.com/clabnet/configs#readme",
-  "bugs": "https://github.com/clabnet/configs/issues",
+  "author": "Claudio Barca <c.barca@libero.it> (http://github.com/clabnet)",
+  "license": "MIT",
   "scripts": {
     "syncpack:fix": "syncpack format && syncpack fix-mismatches"
   },
-  "main": "index.js",
   "devDependencies": {
     "@types/prettier": "^3.0.0"
   },
   "peerDependencies": {
     "syncpack": "^12.3.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

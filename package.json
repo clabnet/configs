@@ -1,6 +1,7 @@
 {
   "name": "@clabnet/configs",
-  "version": "0.0.2",
+  "version": "0.0.3",
+  "description": "Eslint, Prettier, Syncpack shared configurations",
   "keywords": [
     "configs",
     "eslint",
@@ -8,12 +9,11 @@
     "prettier",
     "syncpack"
   ],
-  "description": "Eslint, Prettier, Syncpack shared configurations",
-  "author": "Claudio Barca <c.barca@libero.it> (http://github.com/clabnet)",
-  "license": "MIT",
-  "repository": "clabnet/configs",
   "homepage": "https://github.com/clabnet/configs#readme",
   "bugs": "https://github.com/clabnet/configs/issues",
+  "repository": "clabnet/configs",
+  "author": "Claudio Barca <c.barca@libero.it> (http://github.com/clabnet)",
+  "license": "MIT",
   "scripts": {
     "fix:all": "pnpm lint:fix . && pnpm format:fix . && pnpm syncpack:fix",
     "format": "prettier --config .prettierrc \"**/src/**/*.{js,json,ts,css,scss,vue,html,md}\" --write",
@@ -21,13 +21,14 @@
     "format:fix": "pnpm format --write",
     "lint": "eslint --ext mjs,js,ts,tsx",
     "lint:fix": "pnpm lint --fix",
-    "syncpack:fix": "syncpack format && syncpack fix-mismatches"
+    "syncpack:fix": "cross-env SYNCPACK_VERBOSE=true syncpack format && syncpack fix-mismatches"
   },
   "dependencies": {
-    "@clabnet/configs-eslint-ts": "workspace:*",
-    "@clabnet/configs-prettier": "workspace:*",
-    "@clabnet/configs-syncpack": "workspace:*",
-    "@clabnet/configs-ts": "workspace:*",
+    "@clabnet/configs-eslint-ts": "0.1.0",
+    "@clabnet/configs-prettier": "0.1.1",
+    "@clabnet/configs-syncpack": "0.1.1",
+    "@clabnet/configs-ts": "0.1.0",
+    "cross-env": "^7.0.3",
     "eslint": "^8.56.0",
     "prettier": "^3.1.1",
     "syncpack": "^12.3.0"
