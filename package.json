@@ -1,6 +1,6 @@
 {
   "name": "@clabnet/configs",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "Eslint, Prettier, Syncpack shared configurations",
   "keywords": [
     "configs",
