@@ -18,6 +18,7 @@
   "author": "Claudio Barca <c.barca@libero.it> (http://github.com/clabnet)",
   "license": "MIT",
   "scripts": {
+    "release:npm": "pnpm publish --access public --loglevel silly",
     "syncpack:fix": "syncpack format && syncpack fix-mismatches"
   },
   "dependencies": {

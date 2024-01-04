@@ -21,6 +21,7 @@
     "format:fix": "pnpm format --write",
     "lint": "eslint --ext mjs,js,ts,tsx",
     "lint:fix": "pnpm lint --fix",
+    "release:npm": "pnpm publish --access public --loglevel silly",
     "syncpack:fix": "cross-env SYNCPACK_VERBOSE=true syncpack format && syncpack fix-mismatches"
   },
   "dependencies": {
