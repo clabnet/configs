@@ -1,5 +1,7 @@
 # Shared eslint configuration
 
+![](https://img.shields.io/npm/v/@clabnet/configs-eslint-ts.svg?color=brightgreen) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#)
+
 The purpose of the `eslint` is linting `javascript` and `typescript` languages (`js`, `ts`, `tsx`).
 
 > This configuration targets **monorepo** packages.
@@ -25,7 +27,7 @@ The purpose of the `eslint` is linting `javascript` and `typescript` languages (
   ```js
   // .eslintrc.js
 
-  module.exports = require('@clabnet/configs-eslint-ts');
+  module.exports = require('@clabnet/configs-eslint-ts')
   ```
 
 - Add eslint ignore patterns file:
@@ -49,7 +51,7 @@ The purpose of the `eslint` is linting `javascript` and `typescript` languages (
 
   ```jsonc
   // package.json
-  
+
   "scripts": {
     ...
     "lint": "eslint --ext js,cjs,mjs,ts,tsx",

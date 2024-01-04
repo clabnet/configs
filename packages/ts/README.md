@@ -1,5 +1,7 @@
 # Shared typescript configuration
 
+![](https://img.shields.io/npm/v/@clabnet/configs-ts.svg?color=brightgreen) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#)
+
 The purpose of the [typescript](https://www.typescriptlang.org/) is to add strong typing to `javascript`.
 
 > This configuration targets **lib typescript** packages.
@@ -22,7 +24,7 @@ The purpose of the [typescript](https://www.typescriptlang.org/) is to add stron
 
   ```jsonc
   // packages/foo/tsconfig.json
-  
+
   {
     "extends": "@clabnet/configs-ts",
     "compilerOptions": {

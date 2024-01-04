@@ -1,5 +1,7 @@
 # Shared prettier configuration
 
+![](https://img.shields.io/npm/v/@clabnet/configs-prettier.svg?color=brightgreen) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#)
+
 The purpose of the `prettier` is formatting many language formats (`js`, `ts`, `tsx`, `md`, `json`, `yaml`).
 
 ---
@@ -23,7 +25,7 @@ The purpose of the `prettier` is formatting many language formats (`js`, `ts`, `
   ```js
   // .prettierrc.js
 
-  module.exports = require('@clabnet/configs-prettier');
+  module.exports = require('@clabnet/configs-prettier')
   ```
 
 - Add prettier ignore patterns file:
@@ -47,7 +49,7 @@ The purpose of the `prettier` is formatting many language formats (`js`, `ts`, `
 
   ```jsonc
   // package.json
-  
+
   "scripts": {
     ...
     "format": "prettier",
@@ -71,8 +73,6 @@ The purpose of the `prettier` is formatting many language formats (`js`, `ts`, `
   pnpm format:check .
   pnpm format:fix .
   ```
-  
-  
 
 [⬅ Back](../../README.md)
 

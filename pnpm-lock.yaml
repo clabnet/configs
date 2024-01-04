@@ -9,17 +9,20 @@ importers:
   .:
     dependencies:
       '@clabnet/configs-eslint-ts':
-        specifier: 0.1.0
+        specifier: 0.1.2
         version: link:packages/eslint-ts
       '@clabnet/configs-prettier':
-        specifier: 0.1.1
+        specifier: 0.1.3
         version: link:packages/prettier
       '@clabnet/configs-syncpack':
-        specifier: 0.1.1
+        specifier: 0.1.2
         version: link:packages/syncpack
       '@clabnet/configs-ts':
-        specifier: 0.1.0
+        specifier: 0.1.3
         version: link:packages/ts
+      '@types/node':
+        specifier: ^20.10.6
+        version: 20.10.6
       cross-env:
         specifier: ^7.0.3
         version: 7.0.3
@@ -31,7 +34,14 @@ importers:
         version: 3.1.1
       syncpack:
         specifier: ^12.3.0
-        version: 12.3.0
+        version: 12.3.0(typescript@5.3.3)
+      typescript:
+        specifier: ^5.3.3
+        version: 5.3.3
+    devDependencies:
+      changie:
+        specifier: ^1.17.0
+        version: 1.17.0
 
   packages/eslint-ts:
     dependencies:
@@ -72,20 +82,13 @@ importers:
     dependencies:
       syncpack:
         specifier: ^12.3.0
-        version: 12.3.0
+        version: 12.3.0(typescript@5.3.3)
     devDependencies:
       '@types/prettier':
         specifier: ^3.0.0
         version: 3.0.0
 
-  packages/ts:
-    dependencies:
-      '@types/node':
-        specifier: ^18.11.3
-        version: 18.11.7
-      typescript:
-        specifier: ^4.8.4
-        version: 4.8.4
+  packages/ts: {}
 
 packages:
 
@@ -220,8 +223,10 @@ packages:
   /@types/json-schema@7.0.15:
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
 
-  /@types/node@18.11.7:
-    resolution: {integrity: sha512-LhFTglglr63mNXUSRYD8A+ZAIu5sFqNJ4Y2fPuY7UlrySJH87rRRlhtVmMHplmfk5WkoJGmDjE9oiTfyX94CpQ==}
+  /@types/node@20.10.6:
+    resolution: {integrity: sha512-Vac8H+NlRNNlAmDfGUP7b5h/KA+AtWIzuXy0E6OyP8f1tCLYAtPvKRRDJjAPqhpCb0t6U2j7/xqAuLEebW2kiw==}
+    dependencies:
+      undici-types: 5.26.5
     dev: false
 
   /@types/prettier@3.0.0:
@@ -498,6 +503,11 @@ packages:
       supports-color: 7.2.0
     dev: false
 
+  /changie@1.17.0:
+    resolution: {integrity: sha512-DB0pjUF4IEhRXb9L6LQuBethT2bNJ4ddPrY9pwAxkwDcHyzuAKrB+twpe3BU1DenSOW4gNefDBvD7TIx3SkgkQ==}
+    hasBin: true
+    dev: true
+
   /cli-cursor@3.1.0:
     resolution: {integrity: sha512-I/zHAwsKf9FqGoXM4WWRACob9+SNukZTd94DWF57E4toouRulbCxcUh6RKUEOQlYTHJnzkPMySvPNaaSLNfLZw==}
     engines: {node: '>=8'}
@@ -545,7 +555,7 @@ packages:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
     dev: false
 
-  /cosmiconfig@9.0.0:
+  /cosmiconfig@9.0.0(typescript@5.3.3):
     resolution: {integrity: sha512-itvL5h8RETACmOTFc4UfIyB2RfEHi71Ax6E/PivVxq9NseKbOWpeyHEOIbmAw1rs8Ak0VursQNww7lf7YtUwzg==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -558,6 +568,7 @@ packages:
       import-fresh: 3.3.0
       js-yaml: 4.1.0
       parse-json: 5.2.0
+      typescript: 5.3.3
     dev: false
 
   /cross-env@7.0.3:
@@ -1383,7 +1394,7 @@ packages:
       tslib: 2.6.2
     dev: false
 
-  /syncpack@12.3.0:
+  /syncpack@12.3.0(typescript@5.3.3):
     resolution: {integrity: sha512-Gz2uGn96OmGfVVlKztvFac1EJYjP+WptQ2ohA6Uf48C6qLkhSayhkdujKQ6q7bGOTy8HSGI0iDfwfCJu6wvRig==}
     engines: {node: '>=16'}
     hasBin: true
@@ -1391,7 +1402,7 @@ packages:
       '@effect/schema': 0.56.1(effect@2.0.0-next.62)(fast-check@3.15.0)
       chalk: 4.1.2
       commander: 11.1.0
-      cosmiconfig: 9.0.0
+      cosmiconfig: 9.0.0(typescript@5.3.3)
       effect: 2.0.0-next.62
       enquirer: 2.4.1
       fast-check: 3.15.0
@@ -1453,16 +1464,14 @@ packages:
     engines: {node: '>=10'}
     dev: false
 
-  /typescript@4.8.4:
-    resolution: {integrity: sha512-QCh+85mCy+h0IGff8r5XWzOVSbBO+KfeYrMQh7NJ58QujwcE22u+NUSmUxqF+un70P9GXKxa2HCNiTTMJknyjQ==}
-    engines: {node: '>=4.2.0'}
-    hasBin: true
-    dev: false
-
   /typescript@5.3.3:
     resolution: {integrity: sha512-pXWcraxM0uxAS+tN0AG/BF2TyqmHO014Z070UsJ+pFvYuRSq8KH8DmWpnbXe0pEPDHXZV3FcAbJkijJ5oNEnWw==}
     engines: {node: '>=14.17'}
     hasBin: true
+    dev: false
+
+  /undici-types@5.26.5:
+    resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
     dev: false
 
   /uri-js@4.4.1:

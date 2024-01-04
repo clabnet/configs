@@ -1,5 +1,7 @@
 # Shared syncpack configuration
 
+![](https://img.shields.io/npm/v/@clabnet/configs-syncpack.svg?color=brightgreen) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#)
+
 The purpose of the [syncpack](https://www.npmjs.com/package/syncpack) is formatting package json and validating dependencies versions.
 
 ---
@@ -22,14 +24,14 @@ The purpose of the [syncpack](https://www.npmjs.com/package/syncpack) is formatt
   ```js
   // .syncpackrc.js
 
-  module.exports = require('@clabnet/configs-syncpack');
+  module.exports = require('@clabnet/configs-syncpack')
   ```
 
 - Add syncpack scripts:
 
   ```jsonc
   // package.json
-  
+
   "scripts": {
     ...
     "syncpack:fix": "syncpack format && syncpack fix-mismatches"
