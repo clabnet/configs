@@ -9,16 +9,16 @@ importers:
   .:
     dependencies:
       '@clabnet/configs-eslint-ts':
-        specifier: 0.1.2
+        specifier: workspace:*
         version: link:packages/eslint-ts
       '@clabnet/configs-prettier':
-        specifier: 0.1.3
+        specifier: workspace:*
         version: link:packages/prettier
       '@clabnet/configs-syncpack':
-        specifier: 0.1.2
+        specifier: workspace:*
         version: link:packages/syncpack
       '@clabnet/configs-ts':
-        specifier: 0.1.3
+        specifier: workspace:*
         version: link:packages/ts
       '@types/node':
         specifier: ^20.10.6
