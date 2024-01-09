@@ -1,6 +1,6 @@
 {
   "name": "@clabnet/configs-eslint-ts",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Shared eslint config for monorepo and lib packages",
   "main": "index.js",
   "keywords": [
