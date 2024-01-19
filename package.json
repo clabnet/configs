@@ -1,13 +1,14 @@
 {
   "name": "@clabnet/configs",
-  "version": "0.1.4",
-  "description": "Eslint, Prettier, Syncpack shared configurations",
+  "version": "0.1.5",
+  "description": "Eslint, Prettier, Syncpack, Typedoc shared configurations",
   "keywords": [
     "configs",
     "eslint",
     "pnpm",
     "prettier",
-    "syncpack"
+    "syncpack",
+    "typedoc"
   ],
   "homepage": "https://github.com/clabnet/configs#readme",
   "bugs": "https://github.com/clabnet/configs/issues",
