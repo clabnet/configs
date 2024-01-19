@@ -5,8 +5,8 @@
   "main": "typedoc.json",
   "keywords": [
     "configs",
-    "typedoc",
-    "pnpm"
+    "pnpm",
+    "typedoc"
   ],
   "homepage": "https://github.com/clabnet/configs#readme",
   "bugs": "https://github.com/clabnet/configs/issues",
@@ -25,4 +25,3 @@
     "access": "public"
   }
 }
-
