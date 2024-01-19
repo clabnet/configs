@@ -15,6 +15,7 @@ pnpm add --save-dev @clabnet/configs
 - [ESLint](./packages/eslint-ts/README.md)
 - [Prettier](./packages/prettier/README.md)
 - [Syncpack](./packages/syncpack/README.md)
+- [Typedoc](./packages/typedoc/README.md)
 
 ## 👤 Author
 
@@ -22,6 +23,10 @@ pnpm add --save-dev @clabnet/configs
 
 - Github: [@clabnet](https://github.com/clabnet)
 - Twitter: [@clabnet](https://twitter.com/clabnet)
+
+**Angelo Marcinnò**
+
+- Github: [@angelo24782](https://github.com/angelo24782)
 
 ## Show Your Support
 
