@@ -1,5 +1,5 @@
 {
-  "name": "@clabnet/config-typedoc",
+  "name": "@clabnet/configs-typedoc",
   "version": "0.0.1",
   "description": "Shared typedoc config for monorepo and lib packages",
   "main": "typedoc.json",
@@ -13,7 +13,7 @@
   "repository": {
     "url": "https://github.com/clabnet/configs",
     "type": "git",
-    "directory": "packages/config-typedoc"
+    "directory": "packages/typedoc"
   },
   "author": "Angelo Marcinnó <angelo24782@gmail.com> (http://github.com/clabnet)",
   "license": "MIT",
