@@ -1,0 +1,15 @@
+{
+	"$schema": "https://typedoc.org/schema.json",
+	"plugin": [
+		"typedoc-plugin-merge-modules",
+		"typedoc-material-theme",
+		"typedoc-plugin-extras"
+	],
+	"themeColor": "#cb9820",
+	"entryPointStrategy": "expand",
+	"includeVersion": true,
+	"readme": "none",
+	"groupOrder": ["Functions", "Interfaces", "*"],
+	"mergeModulesRenameDefaults": true,
+	"mergeModulesMergeMode": "module"
+}

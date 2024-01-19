@@ -1,0 +1,28 @@
+{
+  "name": "@clabnet/config-typedoc",
+  "version": "0.0.1",
+  "description": "Shared typedoc config for monorepo and lib packages",
+  "main": "typedoc.json",
+  "keywords": [
+    "configs",
+    "typedoc",
+    "pnpm"
+  ],
+  "homepage": "https://github.com/clabnet/configs#readme",
+  "bugs": "https://github.com/clabnet/configs/issues",
+  "repository": {
+    "url": "https://github.com/clabnet/configs",
+    "type": "git",
+    "directory": "packages/config-typedoc"
+  },
+  "author": "Angelo Marcinnó <angelo24782@gmail.com> (http://github.com/clabnet)",
+  "license": "MIT",
+  "scripts": {
+    "release:npm": "pnpm publish --access public --loglevel silly",
+    "syncpack:fix": "syncpack format && syncpack fix-mismatches"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
+
