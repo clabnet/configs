@@ -22,8 +22,8 @@
     "format:fix": "pnpm format --write",
     "lint": "eslint --ext mjs,js,ts,tsx",
     "lint:fix": "pnpm lint --fix",
-    "release:me": "pnpm publish --access public --loglevel silly",
     "release:all": "npm-run-all -l -s release:npm*",
+    "release:me": "pnpm publish --access public --loglevel silly",
     "release:npm-eslint": "pnpm --filter @clabnet/configs-eslint-ts release:npm",
     "release:npm-prettier": "pnpm --filter @clabnet/configs-prettier release:npm",
     "release:npm-syncpack": "pnpm --filter @clabnet/configs-syncpack release:npm",
@@ -39,11 +39,11 @@
     "@clabnet/configs-typedoc": "0.1.8",
     "cross-env": "^7.0.3",
     "eslint": "^8.56.0",
-    "prettier": "^3.1.1",
+    "prettier": "^3.2.4",
     "syncpack": "^12.3.0"
   },
   "devDependencies": {
-    "changie": "^1.17.0"
+    "changie": "^1.18.0"
   },
   "engines": {
     "node": ">=18.0.0",

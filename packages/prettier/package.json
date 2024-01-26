@@ -21,9 +21,8 @@
     "release:npm": "pnpm publish --access public --loglevel silly",
     "syncpack:fix": "syncpack format && syncpack fix-mismatches"
   },
-  "devDependencies": {},
   "peerDependencies": {
-    "prettier": "^3.1.1"
+    "prettier": "^3.2.4"
   },
   "publishConfig": {
     "access": "public"
