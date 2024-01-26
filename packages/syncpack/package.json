@@ -1,6 +1,6 @@
 {
   "name": "@clabnet/configs-syncpack",
-  "version": "0.1.6",
+  "version": "0.1.8",
   "description": "Shared syncpack config for monorepo and lib packages",
   "main": "index.js",
   "keywords": [
