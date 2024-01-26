@@ -1,1 +1,1 @@
-module.exports = require('./packages/syncpack');
+module.exports = require('./packages/syncpack')

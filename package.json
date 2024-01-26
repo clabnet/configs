@@ -1,6 +1,6 @@
 {
   "name": "@clabnet/configs",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "Eslint, Prettier, Syncpack, Typedoc shared configurations",
   "keywords": [
     "configs",
@@ -16,12 +16,6 @@
   "author": "Claudio Barca <c.barca@libero.it> (http://github.com/clabnet)",
   "license": "MIT",
   "scripts": {
-    "fix:all": "pnpm lint:fix . && pnpm format:fix . && pnpm syncpack:fix",
-    "format": "prettier --config .prettierrc \"**/src/**/*.{js,json,ts,css,scss,vue,html,md}\" --write",
-    "format:check": "pnpm format --check --debug-check",
-    "format:fix": "pnpm format --write",
-    "lint": "eslint --ext mjs,js,ts,tsx",
-    "lint:fix": "pnpm lint --fix",
     "release:all": "npm-run-all -l -s release:npm*",
     "release:me": "pnpm publish --access public --loglevel silly",
     "release:npm-eslint": "pnpm --filter @clabnet/configs-eslint-ts release:npm",

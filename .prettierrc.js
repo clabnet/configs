@@ -1,1 +1,1 @@
-module.exports = require('@clabnet/configs-prettier');
+module.exports = require('./packages/prettier')
