@@ -1,6 +1,6 @@
 {
   "name": "@clabnet/configs-eslint-ts",
-  "version": "0.1.4",
+  "version": "0.1.6",
   "description": "Shared eslint config for monorepo and lib packages",
   "main": "index.js",
   "keywords": [
@@ -26,10 +26,12 @@
     "@typescript-eslint/parser": "6.17.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-log-filenames": "^1.0.6",
-    "eslint-plugin-prettier": "5.1.2"
+    "eslint-plugin-prettier": "5.1.2",
+    "eslint-plugin-vue": "^9.20.1"
   },
   "devDependencies": {
-    "@types/eslint": "^8.56.0"
+    "@types/eslint": "^8.56.2",
+    "vue-eslint-parser": "^9.4.2"
   },
   "peerDependencies": {
     "eslint": "^8.56.0"

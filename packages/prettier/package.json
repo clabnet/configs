@@ -1,6 +1,6 @@
 {
   "name": "@clabnet/configs-prettier",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Shared prettier config for monorepo and lib packages",
   "main": "index.js",
   "keywords": [
@@ -21,9 +21,7 @@
     "release:npm": "pnpm publish --access public --loglevel silly",
     "syncpack:fix": "syncpack format && syncpack fix-mismatches"
   },
-  "devDependencies": {
-    "@types/prettier": "^3.0.0"
-  },
+  "devDependencies": {},
   "peerDependencies": {
     "prettier": "^3.1.1"
   },

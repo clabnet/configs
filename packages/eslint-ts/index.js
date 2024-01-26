@@ -1,34 +1,25 @@
-/** @type {import('eslint').Linter.BaseConfig} **/
 module.exports = {
-    root: true,
-    parser: 'vue-eslint-parser',
-    plugins: ['@typescript-eslint', 'log-filenames', 'prettier'],
-    extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'plugin:prettier/recommended'],
-    rules: {
-        '@typescript-eslint/no-unused-vars': 'warn',
-        '@typescript-eslint/ban-ts-comment': 'warn',
-        '@typescript-eslint/no-empty-interface': 'warn',
-        '@typescript-eslint/no-explicit-any': 'warn',
-        '@typescript-eslint/no-namespace': 'warn',
-        '@typescript-eslint/no-non-null-assertion': 'warn',
-        '@typescript-eslint/no-var-requires': 'warn',
-        '@typescript-eslint/ban-types': [
-            'error',
-            {
-                extendDefaults: true,
-                types: {
-                    '{}': false
-                }
-            }
-        ]
-    },
-    env: {
-        node: true,
-        jest: true
-    },
-    parserOptions: {
-        parser: '@typescript-eslint/parser',
-        ecmaVersion: 'latest',
-        sourceType: 'module'
-    },
-};
+  env: {
+    browser: true,
+    node: true,
+    es2021: true
+  },
+  extends: ['eslint:recommended', 'plugin:vue/vue3-recommended', 'prettier'],
+  parser: 'vue-eslint-parser',
+  parserOptions: {
+    parser: '@typescript-eslint/parser'
+  },
+  plugins: ['vue', 'prettier'],
+  rules: {
+    'vue/require-default-prop': 'warn',
+    'vue/no-reserved-component-names': 'off',
+    'vue/no-unused-vars': 'off',
+    'vue/no-v-html': 'off',
+    'vue/attribute-hyphenation': 'off',
+    'vue/multi-word-component-names': 'off',
+    'prettier/prettier': ['error'],
+    'no-octal-escape': 'error',
+    'no-unused-vars': 'off',
+    'no-undef': 'off'
+  }
+}
