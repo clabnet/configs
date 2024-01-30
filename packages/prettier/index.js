@@ -10,8 +10,11 @@ const config = {
   semi: false,
   vueIndentScriptAndStyle: true,
   importOrder: ["^components/(.*)$", "^[./]" ],
-  importOrderSeparation: true, 
+  importOrderSeparation: true,
   importOrderSortSpecifiers: true ,
+  plugins: [
+    "@trivago/prettier-plugin-sort-imports"
+  ],
   overrides: [
     {
       files: ['*.yaml', '*.yml'],
