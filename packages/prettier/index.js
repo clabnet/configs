@@ -9,6 +9,9 @@ const config = {
   tabWidth: 2,
   semi: false,
   vueIndentScriptAndStyle: true,
+  importOrder: ["^components/(.*)$", "^[./]" ],
+  importOrderSeparation: true, 
+  importOrderSortSpecifiers: true ,
   overrides: [
     {
       files: ['*.yaml', '*.yml'],
