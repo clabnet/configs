@@ -3,7 +3,7 @@ const config = {
   arrowParens: 'always',
   printWidth: 160,
   singleQuote: true,
-  singleAttributePerLine: true,
+  singleAttributePerLine: false,
   trailingComma: 'none',
   bracketSpacing: true,
   tabWidth: 2,

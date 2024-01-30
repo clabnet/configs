@@ -1,6 +1,6 @@
 {
   "name": "@clabnet/configs-prettier",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "description": "Shared prettier config for monorepo and lib packages",
   "main": "index.js",
   "type": "module",
