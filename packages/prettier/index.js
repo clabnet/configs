@@ -1,5 +1,5 @@
 /** @type {import('prettier').Config} **/
-module.exports = {
+const config = {
   arrowParens: 'always',
   printWidth: 160,
   singleQuote: true,
@@ -25,3 +25,5 @@ module.exports = {
     }
   ]
 }
+
+export default config
