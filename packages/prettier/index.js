@@ -9,12 +9,6 @@ const config = {
   tabWidth: 2,
   semi: false,
   vueIndentScriptAndStyle: true,
-  importOrder: ["^components/(.*)$", "^[./]" ],
-  importOrderSeparation: true,
-  importOrderSortSpecifiers: true ,
-  plugins: [
-    "@trivago/prettier-plugin-sort-imports"
-  ],
   overrides: [
     {
       files: ['*.yaml', '*.yml'],

@@ -1,6 +1,6 @@
 {
   "name": "@clabnet/configs-syncpack",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "Shared syncpack config for monorepo and lib packages",
   "main": "index.js",
   "keywords": [
@@ -21,9 +21,7 @@
     "release:npm": "pnpm publish --access public --loglevel silly",
     "syncpack:fix": "syncpack format && syncpack fix-mismatches"
   },
-  "devDependencies": {
-    "@types/prettier": "^3.0.0"
-  },
+  "devDependencies": {},
   "peerDependencies": {
     "syncpack": "^12.3.0"
   },
