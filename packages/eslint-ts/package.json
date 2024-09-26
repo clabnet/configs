@@ -1,6 +1,6 @@
 {
   "name": "@clabnet/configs-eslint-ts",
-  "version": "0.1.10",
+  "version": "0.1.16",
   "description": "Shared eslint config for monorepo and lib packages",
   "main": "index.js",
   "keywords": [
@@ -34,7 +34,7 @@
     "vue-eslint-parser": "^9.4.2"
   },
   "peerDependencies": {
-    "eslint": "^8.56.0"
+    "eslint": "^9.11.1"
   },
   "publishConfig": {
     "access": "public"
