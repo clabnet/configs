@@ -1,6 +1,6 @@
 {
   "name": "@clabnet/configs",
-  "version": "0.1.16",
+  "version": "0.1.17",
   "description": "Eslint, Prettier, Syncpack, Typedoc shared configurations",
   "keywords": [
     "configs",
@@ -25,18 +25,18 @@
     "syncpack:fix": "cross-env SYNCPACK_VERBOSE=true syncpack format && syncpack fix-mismatches"
   },
   "dependencies": {
-    "@clabnet/configs-eslint-ts": "0.1.10",
-    "@clabnet/configs-prettier": "0.1.15",
-    "@clabnet/configs-syncpack": "0.1.9",
+    "@clabnet/configs-eslint-ts": "0.1.17",
+    "@clabnet/configs-prettier": "0.1.17",
+    "@clabnet/configs-syncpack": "0.1.17",
     "@clabnet/configs-ts": "0.1.8",
     "@clabnet/configs-typedoc": "0.1.8",
     "cross-env": "^7.0.3",
-    "eslint": "^9.11.1",
-    "prettier": "^3.3.3",
-    "syncpack": "^13.0.0"
+    "eslint": "^9.25.1",
+    "prettier": "^3.5.3",
+    "syncpack": "^13.0.3"
   },
   "devDependencies": {
-    "changie": "^1.21.0"
+    "changie": "^1.21.1"
   },
   "engines": {
     "node": ">=18.0.0",
