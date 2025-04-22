@@ -9,20 +9,20 @@ importers:
   .:
     dependencies:
       '@clabnet/configs-eslint-ts':
-        specifier: 0.1.17
+        specifier: 0.1.18
         version: link:packages/eslint-ts
       '@clabnet/configs-prettier':
-        specifier: 0.1.17
+        specifier: 0.1.18
         version: link:packages/prettier
       '@clabnet/configs-syncpack':
-        specifier: 0.1.17
+        specifier: 0.1.18
         version: link:packages/syncpack
       '@clabnet/configs-ts':
-        specifier: 0.1.8
-        version: 0.1.8
+        specifier: 0.1.18
+        version: link:packages/ts
       '@clabnet/configs-typedoc':
-        specifier: 0.1.8
-        version: 0.1.8
+        specifier: 0.1.18
+        version: link:packages/typedoc
       '@types/node':
         specifier: ^20.10.6
         version: 20.17.30
@@ -107,14 +107,6 @@ packages:
   /@babel/helper-validator-identifier@7.25.9:
     resolution: {integrity: sha512-Ed61U6XJc3CVRfkERJWDz4dJwKe7iLmmJsbOGu9wSloNSFttHV0I8g6UAgb7qnK5ly5bGLPd4oXZlxCdANBOWQ==}
     engines: {node: '>=6.9.0'}
-    dev: false
-
-  /@clabnet/configs-ts@0.1.8:
-    resolution: {integrity: sha512-bk6n1wFiV90t7DHVRd8kiLNkHuJi0F2+7Y4XENxyi/CVTRYLOGJ81O/QZR45staffXHU4x9DKIULYVDYW85ALw==}
-    dev: false
-
-  /@clabnet/configs-typedoc@0.1.8:
-    resolution: {integrity: sha512-gijfCaOAoNxo9fE/xS/V094NNQZA26fE2HOpHrLIvVhIHyPL+pOn7dyYtUIea56MKqpNlOb5+Tk6ZYexxi51Fw==}
     dev: false
 
   /@effect/schema@0.75.5(effect@3.14.11):
