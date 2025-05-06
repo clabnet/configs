@@ -31,9 +31,9 @@
     "@clabnet/configs-ts": "0.1.18",
     "@clabnet/configs-typedoc": "0.1.18",
     "cross-env": "^7.0.3",
-    "eslint": "^9.25.1",
+    "eslint": "^9.26.0",
     "prettier": "^3.5.3",
-    "syncpack": "^13.0.3"
+    "syncpack": "^13.0.4"
   },
   "devDependencies": {
     "changie": "^1.21.1"

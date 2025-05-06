@@ -23,7 +23,7 @@
   },
   "devDependencies": {},
   "peerDependencies": {
-    "syncpack": "^13.0.0"
+    "syncpack": "^13.0.4"
   },
   "publishConfig": {
     "access": "public"
